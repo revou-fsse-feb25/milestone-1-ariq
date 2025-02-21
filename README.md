@@ -31,7 +31,6 @@ The website is deployed using GitHub Pages. You can access it [here](<https://re
 ## Future Improvements
 - Implement CSS styling for better UI/UX.
 - Add JavaScript for interactivity (e.g., form validation, animations).
-- Expand the Projects section with actual work samples.
 - Improve accessibility and responsiveness.
 
 ## How to Access and Contribute
