@@ -1,0 +1,258 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #3674B5;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #3674B5;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #ff9900;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    gap: 40px;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+section {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+/* Text Styles */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+
+
+/* Form Styling */
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #e68900;
+}
+
+/* Footer */
+footer {
+    background-color: #3674B5;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    form fieldset {
+        padding: 15px;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop & Large Screens */
+@media (min-width: 1025px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px; /* Set a max-width for larger screens */
+        margin: 0 auto;
+    }
+
+    section {
+        grid-column: span 1;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+/* Asymmetrical Layout */
+.section-asymmetrical {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.section-asymmetrical img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px; /* Adjust height for images */
+    border-radius: 8px;
+}
+
+/* Background-Size Example */
+.hero-section {
+    background-image: url('your-image-path.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
