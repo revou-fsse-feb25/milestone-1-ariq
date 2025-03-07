@@ -220,7 +220,7 @@ footer {
 @media (min-width: 1025px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1200px; /* Set a max-width for larger screens */
+        max-width: 1300px; /* Set a max-width for larger screens */
         margin: 0 auto;
     }
 
@@ -240,4 +240,52 @@ footer {
         font-size: 32px;
     }
 }
+
+/* part of parent-about-me  */
+
+.parent-about-me {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+}
+    
+.images-about-me {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    
+}
+
+
+.develop-about-me {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 4;
+}
+        
+/* education part */
+
+.parent-education {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+}
+    
+.education-images {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    
+}
+
+
+.rincian-education {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 4;
+}
+
+
+
+
 
